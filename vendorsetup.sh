@@ -18,18 +18,8 @@ clone_if_missing() {
 # Git clones
 echo "Setting up Google Pixel (Caimito) repositories..."
 
-# Device repos
-clone_if_missing "https://github.com/LineageOS/android_device_google_tokay" "lineage-22.2" "device/google/tokay"
-clone_if_missing "https://github.com/LineageOS/android_device_google_caimito" "lineage-22.2" "device/google/caimito"
-clone_if_missing "https://github.com/LineageOS/android_device_google_zumapro" "lineage-22.2" "device/google/zumapro"
-clone_if_missing "https://github.com/LineageOS/android_device_google_gs101" "lineage-22.2" "device/google/gs101"
-clone_if_missing "https://github.com/LineageOS/android_device_google_gs-common" "lineage-22.2" "device/google/gs-common"
-
 # Android TV
 clone_if_missing "https://android.googlesource.com/device/google/atv" "android-15.0.0_r30" "device/google/atv"
-
-# Kernel
-clone_if_missing "https://android.googlesource.com/device/google/caimito-kernels/6.1" "android-15.0.0_r30" "device/google/caimito-kernels/6.1" --depth=1
 
 # Hardware repos
 clone_if_missing "https://github.com/LineageOS/android_hardware_google_pixel" "lineage-22.2" "hardware/google/pixel"
